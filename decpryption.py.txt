@@ -1,0 +1,19 @@
+decpryptEncryptedMessage=""
+
+m=0
+n=0
+z=0
+
+pas=input("enter the decrypting password: ")
+
+
+if(password==pas):
+    
+    for i in range(len(encryptedmsg)):
+        decpryptEncryptedMessage=decpryptEncryptedMessage+c[img[n,m,z]]
+        n+=1
+        m+=1
+        z=(z+1)%3
+    print("Decrypted message is : ",decode_hash(decpryptEncryptedMessage))
+else:
+    print("invalid password")
